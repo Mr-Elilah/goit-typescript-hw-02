@@ -1,0 +1,24 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: center;
+  position: relative;
+
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.galleryItem {
+  --gap: 18px;
+  --item: 1;
+  width: calc((100% - var(--gap) * (var(--item) - 1)) / var(--item));
+  max-width: 360px;
+  max-height: 270px;
+  transition: transform 0.3s;
+  background-color: rgba(255, 255, 255, 0.767);
+  border-radius: 10px;
+
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
